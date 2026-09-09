@@ -1,0 +1,195 @@
+
+> mobile@1.0.0 web
+> expo start --web
+
+Starting project at C:\my project\mobile
+Using src/app as the root directory for Expo Router.
+React Compiler enabled
+Starting Metro Bundler
+
+Waiting on http://localhost:8081
+
+An update for expo is available: 57.0.20 → ~57.0.21
+3 other packages may need updating. Run npx expo install --check for details.
+Logs for your project will appear below.
+λ Bundled 14908ms node_modules\expo\node_modules\@expo\cli\node_modules\@expo\router-server\node\render.js (1087 modules)
+Web Bundled 16431ms node_modules\expo-router\entry.js (1045 modules)
+λ Bundled 4347ms node_modules\expo\node_modules\@expo\cli\node_modules\@expo\router-server\node\render.js (1 module)
+Web Bundled 5593ms node_modules\expo-router\entry.js (1 module)
+λ Bundled 72ms node_modules\expo\node_modules\@expo\cli\node_modules\@expo\router-server\node\render.js (1 module)
+Web Bundled 1423ms node_modules\expo-router\entry.js (1 module)
+λ Bundled 71ms node_modules\expo\node_modules\@expo\cli\node_modules\@expo\router-server\node\render.js (1 module)
+Web Bundled 1496ms node_modules\expo-router\entry.js (1 module)
+λ Bundled 72ms node_modules\expo\node_modules\@expo\cli\node_modules\@expo\router-server\node\render.js (1 module)
+Web Bundled 1512ms node_modules\expo-router\entry.js (1 module)
+Web Bundled 1458ms node_modules\expo-router\entry.js (1014 modules)
+Web  INFO  %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+Web  LOG  Running application "main" with appParams:
+ {"hydrate": undefined, "rootTag": "#root"} 
+Development-level warnings: ON.
+Performance optimizations: OFF.
+Web  WARN  [expo-notifications] Listening to push token changes is not yet fully supported on web. Adding a listener will have no effect.
+Web  WARN  "shadow*" style props are deprecated. Use "boxShadow".
+λ Bundled 100ms node_modules\expo\node_modules\@expo\cli\node_modules\@expo\router-server\node\render.js (1 module)
+Web Bundled 1306ms node_modules\expo-router\entry.js (1 module)
+Web Bundled 66ms node_modules\expo-router\entry.js (1 module)
+Web  INFO  %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+Web  LOG  Running application "main" with appParams:
+ {"hydrate": undefined, "rootTag": "#root"} 
+Development-level warnings: ON.
+Performance optimizations: OFF.
+Web  WARN  [expo-notifications] Listening to push token changes is not yet fully supported on web. Adding a listener will have no effect.
+Web  WARN  "shadow*" style props are deprecated. Use "boxShadow".
+Web  WARN  props.pointerEvents is deprecated. Use style.pointerEvents
+λ Bundled 231ms node_modules\expo\node_modules\@expo\cli\node_modules\@expo\router-server\node\render.js (1 module)
+Web Bundled 2112ms node_modules\expo-router\entry.js (1 module)
+Web Bundled 79ms node_modules\expo-router\entry.js (1 module)
+Web  INFO  %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+Web  LOG  Running application "main" with appParams:
+ {"hydrate": undefined, "rootTag": "#root"} 
+Development-level warnings: ON.
+Performance optimizations: OFF.
+Web  WARN  [expo-notifications] Listening to push token changes is not yet fully supported on web. Adding a listener will have no effect.
+Web  WARN  "shadow*" style props are deprecated. Use "boxShadow".
+λ Bundled 1001ms node_modules\expo\node_modules\@expo\cli\node_modules\@expo\router-server\node\render.js (1 module)
+Web Bundled 4294ms node_modules\expo-router\entry.js (1 module)
+Web Bundled 107ms node_modules\expo-router\entry.js (1 module)
+Web  INFO  %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+Web  LOG  Running application "main" with appParams:
+ {"hydrate": undefined, "rootTag": "#root"} 
+Development-level warnings: ON.
+Performance optimizations: OFF.
+Web  WARN  [expo-notifications] Listening to push token changes is not yet fully supported on web. Adding a listener will have no effect.
+Web  WARN  "shadow*" style props are deprecated. Use "boxShadow".
+Web  WARN  Cannot record touch end without a touch start.
+ Touch End: {"identifier":0,"pageX":656,"pageY":124,"timestamp":9261.799999999814}
+ Touch Bank: []
+λ Bundled 164ms node_modules\expo\node_modules\@expo\cli\node_modules\@expo\router-server\node\render.js (1 module)
+Web Bundled 1880ms node_modules\expo-router\entry.js (1 module)
+Web  WARN  props.pointerEvents is deprecated. Use style.pointerEvents
+Web  ERROR  [Error: ambiguous column name: created_at] 
+
+Code: api.ts
+[0m [90m 181 |[39m   }
+ [90m 182 |[39m   [36mif[39m ([33m![39mres[33m.[39mok) {
+[31m[1m>[22m[39m[90m 183 |[39m     [36mthrow[39m [36mnew[39m [33mApiError[39m(res[33m.[39mstatus[33m,[39m data[33m?[39m[33m.[39merror [33m||[39m [32m`Request failed (${res.status})`[39m)[33m;[39m
+ [90m     |[39m           [31m[1m^[22m[39m
+ [90m 184 |[39m   }
+ [90m 185 |[39m   [36mreturn[39m data [36mas[39m [33mT[39m[33m;[39m
+ [90m 186 |[39m }[0m
+Call Stack
+  request (src\lib\api.ts:183:11)
+  load (src\app\(tabs)\reports.tsx:45:19)
+Web  ERROR  [Error: ambiguous column name: created_at] 
+
+Code: api.ts
+[0m [90m 181 |[39m   }
+ [90m 182 |[39m   [36mif[39m ([33m![39mres[33m.[39mok) {
+[31m[1m>[22m[39m[90m 183 |[39m     [36mthrow[39m [36mnew[39m [33mApiError[39m(res[33m.[39mstatus[33m,[39m data[33m?[39m[33m.[39merror [33m||[39m [32m`Request failed (${res.status})`[39m)[33m;[39m
+ [90m     |[39m           [31m[1m^[22m[39m
+ [90m 184 |[39m   }
+ [90m 185 |[39m   [36mreturn[39m data [36mas[39m [33mT[39m[33m;[39m
+ [90m 186 |[39m }[0m
+Call Stack
+  request (src\lib\api.ts:183:11)
+  load (src\app\(tabs)\reports.tsx:46:19)
+Web Bundled 3760ms node_modules\expo-router\entry.js (1 module)
+λ Bundled 3849ms node_modules\expo\node_modules\@expo\cli\node_modules\@expo\router-server\node\render.js (1 module)
+Web Bundled 218ms node_modules\expo-router\entry.js (1 module)
+λ Bundled 76ms node_modules\expo\node_modules\@expo\cli\node_modules\@expo\router-server\node\render.js (1 module)
+Web Bundled 1329ms node_modules\expo-router\entry.js (1 module)
+Web  INFO  %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+Web  LOG  Running application "main" with appParams:
+ {"hydrate": undefined, "rootTag": "#root"} 
+Development-level warnings: ON.
+Performance optimizations: OFF.
+Web  WARN  [expo-notifications] Listening to push token changes is not yet fully supported on web. Adding a listener will have no effect.
+Web  WARN  "shadow*" style props are deprecated. Use "boxShadow".
+Web  WARN  props.pointerEvents is deprecated. Use style.pointerEvents
+Web  ERROR  [Error: ambiguous column name: created_at] 
+
+Code: api.ts
+[0m [90m 181 |[39m   }
+ [90m 182 |[39m   [36mif[39m ([33m![39mres[33m.[39mok) {
+[31m[1m>[22m[39m[90m 183 |[39m     [36mthrow[39m [36mnew[39m [33mApiError[39m(res[33m.[39mstatus[33m,[39m data[33m?[39m[33m.[39merror [33m||[39m [32m`Request failed (${res.status})`[39m)[33m;[39m
+ [90m     |[39m           [31m[1m^[22m[39m
+ [90m 184 |[39m   }
+ [90m 185 |[39m   [36mreturn[39m data [36mas[39m [33mT[39m[33m;[39m
+ [90m 186 |[39m }[0m
+Call Stack
+  request (src\lib\api.ts:183:11)
+  load (src\app\(tabs)\reports.tsx:46:19)
+Web  ERROR  [Error: ambiguous column name: created_at] 
+
+Code: api.ts
+[0m [90m 181 |[39m   }
+ [90m 182 |[39m   [36mif[39m ([33m![39mres[33m.[39mok) {
+[31m[1m>[22m[39m[90m 183 |[39m     [36mthrow[39m [36mnew[39m [33mApiError[39m(res[33m.[39mstatus[33m,[39m data[33m?[39m[33m.[39merror [33m||[39m [32m`Request failed (${res.status})`[39m)[33m;[39m
+ [90m     |[39m           [31m[1m^[22m[39m
+ [90m 184 |[39m   }
+ [90m 185 |[39m   [36mreturn[39m data [36mas[39m [33mT[39m[33m;[39m
+ [90m 186 |[39m }[0m
+Call Stack
+  request (src\lib\api.ts:183:11)
+  load (src\app\(tabs)\reports.tsx:46:19)
+λ Bundled 138ms node_modules\expo\node_modules\@expo\cli\node_modules\@expo\router-server\node\render.js (1 module)
+Web Bundled 1417ms node_modules\expo-router\entry.js (1 module)
+Web Bundled 57ms node_modules\expo-router\entry.js (1 module)
+Web  INFO  %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+Web  LOG  Running application "main" with appParams:
+ {"hydrate": undefined, "rootTag": "#root"} 
+Development-level warnings: ON.
+Performance optimizations: OFF.
+Web  WARN  [expo-notifications] Listening to push token changes is not yet fully supported on web. Adding a listener will have no effect.
+Web  WARN  "shadow*" style props are deprecated. Use "boxShadow".
+Web  WARN  props.pointerEvents is deprecated. Use style.pointerEvents
+λ Bundled 90ms node_modules\expo\node_modules\@expo\cli\node_modules\@expo\router-server\node\render.js (1 module)
+Web Bundled 1250ms node_modules\expo-router\entry.js (1 module)
+Web Bundled 66ms node_modules\expo-router\entry.js (1 module)
+λ Bundled 121ms node_modules\expo\node_modules\@expo\cli\node_modules\@expo\router-server\node\render.js (1 module)
+Web Bundled 1236ms node_modules\expo-router\entry.js (1 module)
+Web  INFO  %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+Web  LOG  Running application "main" with appParams:
+ {"hydrate": undefined, "rootTag": "#root"} 
+Development-level warnings: ON.
+Performance optimizations: OFF.
+Web  WARN  [expo-notifications] Listening to push token changes is not yet fully supported on web. Adding a listener will have no effect.
+Web  WARN  "shadow*" style props are deprecated. Use "boxShadow".
+Web  WARN  props.pointerEvents is deprecated. Use style.pointerEvents
+λ Bundled 120ms node_modules\expo\node_modules\@expo\cli\node_modules\@expo\router-server\node\render.js (1 module)
+Web Bundled 1529ms node_modules\expo-router\entry.js (1 module)
+Web Bundled 697ms node_modules\expo-router\entry.js (1 module)
+λ Bundled 867ms node_modules\expo\node_modules\@expo\cli\node_modules\@expo\router-server\node\render.js (1 module)
+Web Bundled 56ms node_modules\expo-router\entry.js (1 module)
+Web  INFO  %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+Web  LOG  Running application "main" with appParams:
+ {"hydrate": undefined, "rootTag": "#root"} 
+Development-level warnings: ON.
+Performance optimizations: OFF.
+Web  WARN  [expo-notifications] Listening to push token changes is not yet fully supported on web. Adding a listener will have no effect.
+Web  WARN  "shadow*" style props are deprecated. Use "boxShadow".
+Web  WARN  props.pointerEvents is deprecated. Use style.pointerEvents
+λ Bundled 61ms node_modules\expo\node_modules\@expo\cli\node_modules\@expo\router-server\node\render.js (1 module)
+Web Bundled 1164ms node_modules\expo-router\entry.js (1 module)
+Web Bundled 53ms node_modules\expo-router\entry.js (1 module)
+Web  INFO  %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+Web  LOG  Running application "main" with appParams:
+ {"hydrate": undefined, "rootTag": "#root"} 
+Development-level warnings: ON.
+Performance optimizations: OFF.
+Web  WARN  [expo-notifications] Listening to push token changes is not yet fully supported on web. Adding a listener will have no effect.
+Web  WARN  "shadow*" style props are deprecated. Use "boxShadow".
+Web  WARN  props.pointerEvents is deprecated. Use style.pointerEvents
+λ Bundled 266ms node_modules\expo\node_modules\@expo\cli\node_modules\@expo\router-server\node\render.js (1 module)
+Web Bundled 3023ms node_modules\expo-router\entry.js (1 module)
+Web Bundled 3130ms node_modules\expo-router\entry.js (1 module)
+Web  INFO  %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+Web  LOG  Running application "main" with appParams:
+ {"hydrate": undefined, "rootTag": "#root"} 
+Development-level warnings: ON.
+Performance optimizations: OFF.
+Web  WARN  [expo-notifications] Listening to push token changes is not yet fully supported on web. Adding a listener will have no effect.
+Web  WARN  "shadow*" style props are deprecated. Use "boxShadow".
+Web  WARN  props.pointerEvents is deprecated. Use style.pointerEvents
+λ Bundled 5238ms node_modules\expo\node_modules\@expo\cli\node_modules\@expo\router-server\node\render.js (1 module)
+Web Bundled 6101ms node_modules\expo-router\entry.js (1 module)
