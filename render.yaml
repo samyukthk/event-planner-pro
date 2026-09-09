@@ -1,0 +1,18 @@
+services:
+  - type: web
+    name: event-planner-api
+    runtime: node
+    plan: free
+    rootDir: backend
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /api/health
+    envVars:
+      - key: NODE_VERSION
+        value: 20
+      - key: JWT_SECRET
+        generateValue: true
+      - key: COMPANY_NAME
+        value: Desire Events
+      - key: CURRENCY
+        value: Rs.

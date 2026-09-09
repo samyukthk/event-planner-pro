@@ -42,7 +42,7 @@ export default app;
 const isMain = process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url);
 if (isMain) {
   const PORT = Number(process.env.PORT) || 4000;
-  app.listen(PORT, () => {
+  app.listen(PORT, async () => {
     console.log(`Event Planner API listening on http://localhost:${PORT}`);
     const counts = {
       users: db.prepare('SELECT COUNT(*) c FROM users').get().c,
@@ -50,6 +50,16 @@ if (isMain) {
       quotations: db.prepare('SELECT COUNT(*) c FROM quotations').get().c,
     };
     console.log('DB counts:', counts);
+
+    // Fresh database (e.g. first boot on a new host) → seed demo users/works
+    if (counts.users === 0) {
+      try {
+        await import('./seed.js');
+        console.log('Auto-seeded demo data (fresh DB).');
+      } catch (e) {
+        console.error('Auto-seed failed:', e);
+      }
+    }
 
     try {
       seedBackgroundJobs();
